@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cafe Work-Spot Finder</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Cafe Work-Spot Finder</h1>
+  <form id="filters">
+    <input id="neighborhood" placeholder="Neighborhood">
+    <label><input type="checkbox" id="wifi"> Wi-Fi</label>
+    <label>Min outlets
+      <select id="minOutlets">
+        <option value="">any</option><option value="1">few</option><option value="2">plenty</option>
+      </select>
+    </label>
+    <label>Max noise
+      <select id="maxNoise">
+        <option value="">any</option><option value="2">quiet</option><option value="3">moderate</option>
+      </select>
+    </label>
+    <button type="submit">Search</button>
+  </form>
+  <section id="results" class="grid"></section>
+  <script src="app.js"></script>
+</body>
+</html>
